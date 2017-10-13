@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://scenes/Battle.gd" type="Script" id=1]
+
+[node name="Node" type="Node"]
+
+script/script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[node name="TimerLabel" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 500.0
+margin/top = 0.0
+margin/right = 600.0
+margin/bottom = 40.0
+text = "0:00"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
